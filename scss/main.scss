@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    width: 900px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto auto auto;
+    border-bottom: 1px solid black;
+    
+   h3{
+       font-size: 25px;
+   }
+    
+}
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+   
+    
+     li{
+         list-style: none;
+     }
+     a{
+         color:hsl(220, 14%, 75%);
+         text-decoration: none;
+     }
+     
+     
+
+    
+        
+     
+}    
+a:hover{
+    border-bottom: 1px solid  hsl(26, 100%, 55%);
+}
+
+.main_area{
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+
+
+    .mini_area1{
+        
+        width: 50%;
+        height: 450px;
+        position: relative;
+
+        .product1{
+            width: 300px;
+            height: 300px;
+            /* background: darkgoldenrod; */
+            background: url("/images/image-product-1.jpg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            left: 70px;
+            top: 20px;
+        }
+        .thumbnails{
+              position: absolute;
+              top: 350px;
+              display: flex;
+              justify-content: space-around;
+             
+              width: 100%;
+             
+            .thumbnails1{
+                width: 80px;
+                height: 84px;
+                background: url("/images/image-product-1-thumbnail.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .thumbnails2{
+                width: 80px;
+                height: 84px;
+                background: url("/images/image-product-2-thumbnail.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .thumbnails3{
+                width: 80px;
+                height: 84px;
+                background: url("/images/image-product-3-thumbnail.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .thumbnails4{
+                width: 80px;
+                height: 84px;
+                background: url("/images/image-product-4-thumbnail.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+    .mini_area2{
+      
+        width: 50%;
+        height: 450px;
+        position: relative;
+
+        h3{
+            color:  hsl(26, 100%, 55%);
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+        h2{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            font-size: 30px;
+        }
+        .p1{
+            position: absolute;
+            left: 50px;
+            top: 130px;
+            color:  hsl(220, 14%, 75%);
+            line-height: 1.5;
+        }
+        .p2{
+            position: absolute;
+            left: 50px;
+            top: 230px;
+            font-size: 30px;
+        }
+        .p3{
+            position: absolute;
+            left: 200px;
+            top: 235px;
+            font-weight: 700;
+            padding: 2px 5px;
+            background: #FFEDE0;
+            color: hsl(26, 100%, 55%);
+        }
+        .p4{
+            position: absolute;
+            left: 50px;
+            top: 280px;
+            font-size: 15px;
+        }
+        .plus_minus{
+            position: absolute;
+            left: 50px;
+            top: 320px;
+            background: hsl(25, 100%, 94%);
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+
+            svg{
+                cursor: pointer;
+            }
+            
+        }
+    }
+    .checkout{
+        position: absolute;
+        left: 230px;
+        top: 320px;
+        width: 180px;
+        height: 50px;
+        background: hsl(26, 100%, 55%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+
+        svg{
+            color: white;
+            cursor: pointer;
+        }
+        button{
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+    }
+}
