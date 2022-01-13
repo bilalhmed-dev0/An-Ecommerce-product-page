@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 nav {
   width: 900px;
   height: 100px;
@@ -15,6 +19,16 @@ nav {
 }
 nav h3 {
   font-size: 25px;
+}
+nav .menu-btn {
+  width: 30px;
+  display: none;
+}
+nav .menu-btn .btn_line {
+  width: 100%;
+  height: 8px;
+  margin: 5px;
+  background: black;
 }
 
 .nav_links {
@@ -173,4 +187,119 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  nav .nav_links {
+    display: none;
+  }
+  nav #cart {
+    position: absolute;
+    right: 130px;
+  }
+  nav #profile {
+    position: absolute;
+    right: 30px;
+  }
+  nav h3 {
+    font-size: 25px;
+    position: absolute;
+    left: 70px;
+  }
+  nav .menu-btn {
+    width: 30px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+  }
+  nav .menu-btn .btn_line1,
+nav .menu-btn .btn_line2,
+nav .menu-btn .btn_line3 {
+    width: 100%;
+    height: 5px;
+    margin: 5px;
+    background: black;
+  }
+
+  .main_area {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    height: 800px;
+  }
+  .main_area .thumbnails {
+    display: none;
+  }
+  .main_area .thumbnails .thumbnails1, .main_area .thumbnails .thumbnails2, .main_area .thumbnails .thumbnails3, .main_area .thumbnails .thumbnails4 {
+    display: none;
+  }
+  .main_area .mini_area1 {
+    width: 100%;
+    position: relative;
+  }
+  .main_area .mini_area1 .product1 {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+  }
+  .main_area .mini_area2 {
+    width: 100%;
+    height: 800px;
+  }
+  .main_area .mini_area2 h3 {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+  }
+  .main_area .mini_area2 h2 {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+  }
+  .main_area .mini_area2 .p1 {
+    position: absolute;
+    left: 20px;
+    top: 170px;
+  }
+  .main_area .mini_area2 .p2 {
+    position: absolute;
+    left: 20px;
+    top: 290px;
+  }
+  .main_area .mini_area2 .p3 {
+    position: absolute;
+    left: 170px;
+    top: 300px;
+  }
+  .main_area .mini_area2 .p4 {
+    position: absolute;
+    left: 260px;
+    top: 305px;
+    font-size: 18px;
+    text-decoration: line-through;
+  }
+  .main_area .mini_area2 .plus_minus {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 350px;
+  }
+  .main_area .mini_area2 .checkout {
+    position: absolute;
+    left: 0px;
+    top: 420px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
