@@ -199,7 +199,33 @@ a:hover {
     margin: 0;
   }
   nav .nav_links {
-    display: none;
+    visibility: hidden;
+  }
+  nav .nav_links.active {
+    background: whitesmoke;
+    visibility: visible;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 1;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-out;
+  }
+  nav .nav_links.active a {
+    color: #000;
+  }
+  nav .menu-btn.active .btn_line1 {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  nav .menu-btn.active .btn_line2 {
+    opacity: 0;
+  }
+  nav .menu-btn.active .btn_line3 {
+    transform: rotate(-45deg) translate(7px, -7px);
   }
   nav #cart {
     position: absolute;
@@ -291,15 +317,15 @@ nav .menu-btn .btn_line3 {
     text-decoration: line-through;
   }
   .main_area .mini_area2 .plus_minus {
-    width: 100%;
+    width: 80%;
     position: absolute;
-    left: 0px;
+    left: 30px;
     top: 350px;
   }
   .main_area .mini_area2 .checkout {
     position: absolute;
-    left: 0px;
+    left: 30px;
     top: 420px;
-    width: 100%;
+    width: 80%;
   }
 }/*# sourceMappingURL=main.css.map */

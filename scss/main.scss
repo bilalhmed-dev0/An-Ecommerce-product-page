@@ -225,8 +225,43 @@ a:hover{
         
 
         .nav_links{
-            display: none;
+           visibility: hidden;
         }
+        .nav_links.active{
+            background: whitesmoke;
+            visibility: visible;
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            z-index: 1;
+            height: 100%;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.5s ease-out;
+            a{
+                color: #000;
+            }
+
+        }
+        .menu-btn.active{
+ 
+
+            .btn_line1{
+                transform: rotate(45deg) translate(7px , 7px);
+            }
+            .btn_line2{
+                opacity: 0;
+            }
+            .btn_line3{
+                transform: rotate(-45deg)  translate(7px , -7px);
+             }
+
+        }
+        
+        
+      
         
         #cart{
             position: absolute;
@@ -329,16 +364,16 @@ a:hover{
             }
             .plus_minus{
                 
-                width: 100%;
+                width: 80%;
                 position: absolute;
-                left: 0px;
+                left: 30px;
                 top: 350px;
             }
             .checkout{
                 position: absolute;
-                left: 0px;
+                left: 30px;
                 top:420px;
-                width: 100%;
+                width: 80%;
             }
         }
 
