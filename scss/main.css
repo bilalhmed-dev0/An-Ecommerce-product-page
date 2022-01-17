@@ -79,7 +79,7 @@ a:hover {
   cursor: pointer;
 }
 .main_area .mini_area1 .product1 img {
-  width: 300px;
+  width: inherit;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -294,6 +294,9 @@ nav .menu-btn .btn_line3 {
     width: 100%;
     position: absolute;
     left: 0px;
+  }
+  .main_area .mini_area1 .product1 .product1 img {
+    width: 100%;
   }
   .main_area .mini_area1 .product1 .previous {
     position: absolute;
