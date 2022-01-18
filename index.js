@@ -6,6 +6,14 @@ const images = document.querySelector('.images');
 const Plus = document.querySelector('.plus');
 const Minus = document.querySelector('.minus');
 const Output = document.querySelector('.output');
+const cartLogo = document.querySelector('#cartlogo');
+const Cart = document.querySelector('.cart');
+const P2 = document.querySelector('.p2');
+const Checkout = document.querySelector('.checkout');
+
+
+
+
 
 
 
@@ -53,4 +61,30 @@ Minus.addEventListener('click' ,() =>{
         calculating = calculating * 0;
     }
     Output.innerHTML = calculating;
+});
+
+
+// dealing with the cart
+
+cartLogo.addEventListener('click', () =>{
+     Cart.classList.toggle('on');
+     
+
+});
+
+// dealing with the calculation of an item
+
+let calculation;
+
+let price = 125.00;
+
+Checkout.addEventListener('click' ,() =>{
+        
+    calculation = calculating * price;
+    
+
+    document.querySelector('.price').innerHTML =calculation;
+    
+            
 })
+

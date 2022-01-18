@@ -20,6 +20,9 @@ nav {
 nav h3 {
   font-size: 25px;
 }
+nav #cartlogo {
+  cursor: pointer;
+}
 nav .menu-btn {
   width: 30px;
   display: none;
@@ -203,6 +206,46 @@ a:hover {
   cursor: pointer;
   padding: 10px;
 }
+.main_area .cart {
+  width: 250px;
+  height: 250px;
+  background: whitesmoke;
+  position: absolute;
+  top: 150px;
+  right: 250px;
+  visibility: hidden;
+  z-index: 50;
+}
+.main_area .cart .check {
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+  width: 180px;
+  height: 50px;
+  background: #ff7d1a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main_area .cart .price {
+  position: absolute;
+  left: 100px;
+  top: 130px;
+  background: white;
+  width: 20%;
+  color: #ff7d1a;
+}
+.main_area .cart .dollarsign {
+  position: absolute;
+  left: 80px;
+  top: 130px;
+}
+.main_area .cart .p5 {
+  font-size: 17px;
+}
+.main_area .on.cart {
+  visibility: visible;
+}
 
 @media (max-width: 500px) {
   body {
@@ -242,7 +285,7 @@ a:hover {
   nav .menu-btn.active .btn_line3 {
     transform: rotate(-45deg) translate(7px, -7px);
   }
-  nav #cart {
+  nav #cartlogo {
     position: absolute;
     right: 130px;
   }
@@ -279,6 +322,32 @@ nav .menu-btn .btn_line3 {
     position: absolute;
     top: 100px;
     height: 800px;
+  }
+  .main_area .cart {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .main_area .cart .mydiv {
+    width: 100%;
+  }
+  .main_area .cart .mydiv .image {
+    width: 50px;
+    height: 50px;
+  }
+  .main_area .cart .check {
+    position: absolute;
+    left: 100px;
+  }
+  .main_area .cart .price {
+    position: absolute;
+    left: 200px;
+    top: 130px;
+    background: white;
+    width: 20%;
+    color: #ff7d1a;
   }
   .main_area .thumbnails {
     display: none;
